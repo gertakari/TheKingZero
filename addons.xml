@@ -297,7 +297,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.TheKingZero" name="The King Zero Official Repo" version="0.0.0" provider-name="King Zero">
+<addon id="repository.TheKingZero" name="The King Zero Official Repo" version="0.0.1" provider-name="King Zero">
 	<extension point="xbmc.addon.repository" name="The King Zero official Repo">
 		<info compressed="false">https://raw.github.com/gertakari/TheKingZero/master/addons.xml</info>
 		<checksum>https://raw.github.com/gertakari/TheKingZero/master/addons.xml.md5</checksum>
@@ -309,23 +309,5 @@
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id='script.module.libtorrent' version='1.1.1b' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
-  <requires>
-    <import addon='xbmc.python' version='2.1.0'/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.module" library="python_libtorrent"/>
-  <extension point='xbmc.addon.metadata'>
-    <platform>all</platform>
-    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
-    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
-    <license>MIT License</license>
-    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
-  </extension>
-  <extension point='xbmc.python.module'/>
 </addon>
 </addons>
