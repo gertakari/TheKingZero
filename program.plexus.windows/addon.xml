@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="program.plexus.windows"
-       name="Plexus"
+       name="Plexus Windows"
        version="0.1.4"
        provider-name="enen92, TV ADDONS">
   <requires>
