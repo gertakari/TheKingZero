@@ -297,7 +297,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.TheKingZero" name="The King Zero Official Repo" version="0.0.1" provider-name="King Zero">
+<addon id="repository.TheKingZero" name="The King Zero Official Repo" version="0.0.2" provider-name="King Zero">
 	<extension point="xbmc.addon.repository" name="The King Zero official Repo">
 		<info compressed="false">https://raw.github.com/gertakari/TheKingZero/master/addons.xml</info>
 		<checksum>https://raw.github.com/gertakari/TheKingZero/master/addons.xml.md5</checksum>
