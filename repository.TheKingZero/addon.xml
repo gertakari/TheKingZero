@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.TheKingZero" name="The King Zero Official Repo" version="0.0.2" provider-name="King Zero">
-	<extension point="xbmc.addon.repository" name="The King Zero official Repo">
+	<extension point="xbmc.addon.repository" name="The King Zero Official Repo">
 		<info compressed="false">https://raw.github.com/gertakari/TheKingZero/master/addons.xml</info>
 		<checksum>https://raw.github.com/gertakari/TheKingZero/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://raw.github.com/gertakari/TheKingZero/master</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>The King Zero official Repo</summary>
+		<summary>The King Zero Official Repo</summary>
    		<description lang="en">Instala Addons compatibles para tu Raspberry Pi 2 / 3.</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
