@@ -27,7 +27,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.laliga" name="La Liga" version="0.0.12" provider-name="Topo">
+<addon id="plugin.video.laliga" name="La Liga" version="0.0.15" provider-name="Topo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -171,7 +171,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.TheKingZero" name="The King Zero official Repo" version="1.0.1" provider-name="TheKingZero">
+<addon id="repository.TheKingZero" name="The King Zero official Repo" version="1.0.5" provider-name="TheKingZero">
 	<extension point="xbmc.addon.repository" name="The King Zero official Repo">
 		<info compressed="false">https://raw.github.com/gertakari/TheKingZero/master/addons.xml</info>
 		<checksum>https://raw.github.com/gertakari/TheKingZero/master/addons.xml.md5</checksum>
