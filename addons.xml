@@ -27,7 +27,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.laliga" name="La Liga" version="0.0.15" provider-name="Topo">
+<addon id="plugin.video.laliga" name="La Liga" version="0.0.12" provider-name="Topo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -46,6 +46,49 @@
 		<disclaimer lang="en">El autor no almacena ni distribuye ninguno de los contenidos que se muestran en este addon. El autor no tiene ninguna afiliación con el proveedor de contenidos.</disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="plugin.video.live.streamspro"
+       name="LiveStreamsPro"
+       version="2.6.4"
+       provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreamspro- shamelessly forked from livestreams but added many thinks</summary>
+    <description>
+        In addition to what livestreams allowed you to do, you can now,
+        1. call regex in regex,
+        2. multiple regex in page, regex in session, also htmlunescape responses
+        3. create session from one regex and pass onto next in line
+        4. save sessions to a file and open again later
+        5. write python code in .py file, put in the profile directory and then call from your regex.
+        6. use epoctime, guid and unpack as functions already defined.
+        7. Use it to post values to the pages to get the proper responses
+        8. support many headers, like origin, X-Requested-With
+        9. you can now append cookies in response and then read in regex using includeheaders
+        10. You can now link to another web url via your xml using externallink
+        11. support for google captcha, now you can show and then post the text
+
+    </description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.pelisalacarta"
@@ -97,6 +140,35 @@
     </extension>
 </addon>
 
+<addon
+  id="plugin.video.SportsDevil"
+  version="03092016"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <import addon="script.module.pydevd" version="4.4.0" optional="true"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension
+      point="xbmc.python.script"
+      library="lib/livestreamerXBMCLocalProxy.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.youtube" name="YouTube" version="5.2.1" provider-name="h0d3nt3uf3l, jdf76, bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -134,6 +206,37 @@
 		<email>ytplugin at datanet dot ws</email>
 		<source>https://github.com/Kolifanes/plugin.video.youtube</source>
 	</extension>
+</addon>
+
+<addon id="plugin.video.ZemTV-shani"
+       name="ZemTV.com"
+       version="5.4.2"
+       provider-name="shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+       	<import addon="script.module.elementtree" version="1.2.8"/>
+
+
+    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>ZemTV.tv Kodi Client. Visit TVADDONS.ag for support</summary>
+    <description>Watch ZemTV.com on your XBMC. This plugin fetches the video sources from ZemTV.com and play on XBMC compatible plateforms</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
+    <email>@shani_08_kodi</email>
+    <platform>all</platform>
+
+
+  </extension>
 </addon>
 
 <addon id="program.plexus"
@@ -174,8 +277,6 @@
 	</extension>
 </addon>
 
-<addon id="repository.quasar" name="Quasar Repository" version="0.9.35" provider-name="scakemyer"><requires></requires><extension point="xbmc.addon.repository" name="Quasar Repository"><info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info><checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum><datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Quasar Updates</summary></extension></addon>
-
 <addon id="repository.shani" name="Shanis Addon Repository" version="2.8" provider-name="Shani">
 	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
     <dir>
@@ -196,7 +297,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.TheKingZero" name="The King Zero official Repo" version="1.0.0" provider-name="TheKingZero">
+<addon id="repository.TheKingZero" name="The King Zero official Repo" version="0.0.0" provider-name="TheKingZero">
 	<extension point="xbmc.addon.repository" name="The King Zero official Repo">
 		<info compressed="false">https://raw.github.com/gertakari/TheKingZero/master/addons.xml</info>
 		<checksum>https://raw.github.com/gertakari/TheKingZero/master/addons.xml.md5</checksum>
