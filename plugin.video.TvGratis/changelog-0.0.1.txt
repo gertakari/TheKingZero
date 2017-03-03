@@ -1,4 +1,0 @@
-﻿
-
-Versión 2.1
-Primera version del plugin. 
