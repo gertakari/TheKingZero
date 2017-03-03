@@ -7,7 +7,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>The King Zero Official Repo</summary>
-   		<description lang="en">Instala Addons compatibles para tu Raspberry Pi 2 / 3.</description>
+   		<description lang="en">Instala Addons compatibles para tu Raspberry Pi 2 / 3. Kodi version Jarvis</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>

@@ -1,0 +1,206 @@
+﻿- Versión 1.0.73
+	- Se arregla el avance en las grabaciones en nube.
+
+- Versión 1.0.72
+	- Actualizacion a Beta Krypton 5 de android.
+	- Se actualiza la descripcion de seektime para Krypton.
+	
+- Versión 1.0.71
+	- Se soluciona un error en las pantallas de los últimos 7 días.
+
+- Versión 1.0.70
+	- Se modifica la funcion de llamada a la obtencion de datos EPGs.
+
+- Versión 1.0.68
+	- Beta 2 Krypton para Android.
+
+- Versión 1.0.68
+	- Se arregla un problema en la captación de imagen en directo.
+	- Se añade en la configuración el color de resaltado del detalle de EPG.
+	- Se corrigen errores varios de DLNA/UPNP incluyendo los procesos de detección.
+	- Se corrige error en el timeshift.
+	- Se añade conversión de subtitulos teletexto para ser reconocidos por Kodi durante la emisión en directo y en grabaciones en nube.
+	- Se añade el fichero de configuración upnp.xml que puede ser personalizado, bien en el directorio del addon o en copia del directorio base, 
+	  que permite variar las cabeceras de respuesta del servidor DLNA.
+	
+- Versión 1.0.67
+	- Avance rapido/retroceso en grabaciones en nube para Krypton.
+	- Cambios en el de bookmark de movistar.
+	
+- Versión 1.0.66
+	- Se compatibilidad con las funciones de GetSearchCapabilities y GetSortCapabilities para UPNP - DLNA.
+	- Se añade la opción de configuración de eliminar o no la grabación en nube despues de la sincronización.
+	- Se añade una opción que refresca los logos de canales cada vez que hay un reinicio de aplicación.
+	- Se añade una opción que desde grabaciones para forzar el borrado de una grabación.
+	- Se modifica el logo del addon por uno mejorado proporcionado por null
+	- Se añaden accesos via script para lanzar las ventanas de series, sincronización y utilidades.
+	- Se añade la multipantalla para la F1 y MotoGP.
+	- Se soluciona un error en subtitulos que producia un error en algunos programas (#0 por ejemplo).
+	
+- Versión 1.0.65
+	- Se arregla la conexión de canales con opción de fuente udpxy.
+
+- Versión 1.0.64
+	- Se añade a los últimos 7 días el bookmark de tiempo.
+	- Se corrige un error al sincronizar grabaciones.
+	
+- Versión 1.0.63
+   - Se corrige un error en la numeración de capitulos de serie en las grabaciones.
+   
+- Versión 1.0.62.
+   - Se arregla un error en el sock de salida del stream mediane http.
+   - En opciones avanzadas se añade como origen de stream de canales un servidor udpxy.
+   - Se modifican los sistemas de buffer de cliente y emisión en DLNA.
+   - Se corrige error en carga de logos de series que produce un tiempo excesivo en la carga del EPG.
+   
+- Versión 1.0.61.
+	- Parche sobre timeout de servidor de servicios.
+	- Se añaden en opciones avanzadas 
+	
+- Versión 1.0.60.
+	- Se añade en configuracion una nueva pestaña de avanzadas al final (a la derecha del todo):
+		- Opción de no calcular rutas bases. Esto deshabilita la obtención de rutas de movistar.
+		- Opción de recargar los canales de forma automatica. Ahora se puede deshabilitar.
+	- Se añaden los distintos tipo de grabación para la versión Jarvis.
+	- Se corrigen errores en el timeout de http en sistemas no windows.
+		
+- Versión 1.0.59.
+	- Modificado código que mejora el tiempo de lanzamiento de visualizacion grabaciones en nube y últimos 7 días.
+	- Se modifican lo accesos mediante http para mejorar rendimientos.
+	- Se modifican los logos de programas, series y grabaciones por los nuevos logos verticales de caratula.
+	- Se añade el logo horizontal como fanart de grabaciones y en la lista de series.
+	- Se agrega la detección automatica de rutas bases.
+		
+- Versión 1.0.58.
+	- Se modifica la pantalla de detalle del plugin añadiendo la miniatura y datos de director, actores ....
+	- Se añade la opción de visualizar detalle y grabar desde los ultimos 7 días por canal.
+	- Se añaden las opciones de 7 días a las opciones de lista de series (botón derecho sobre la serie).
+	
+- Versión 1.0.57
+	- Mejoras en la gestión de memoria. Ya no deberia crecer de forma desproporcionada.
+	- Nuevas pantallas de 7 últimos días accesibles desde canales botón derecho -> Acciones de clientes.
+		
+- Versión 1.0.56
+	- Adaptación al nuevo formato binario de EPG.
+	
+- Versión 1.0.55
+	- Se añade los ultimos 7 días.
+	- Se permite la grabación de programas de los ultimos 7 días.
+	- Se corrige el problema de la selección del fichero de canales externos en la configuracion.
+	- Se modifican las opciones de acciones de cliente para agrupar las utilidades en una nueva pantalla.
+	- Se corrige un error en la recarga forzada de canales.
+
+- Versión 1.0.54
+	- Se añade la pregunta de si se quiere añadir la serie cuando se programa una grabación de un programa con una serie.
+	- Se arreglan errores en la transmisión DLNA.
+	- Se añaden cargas de 2 nuevos ficheros, uno de canales externos y otro de ordenación.
+	- Corregido error de imagenes de programas en Isengard (EPG y detalle).
+	- Corregidos errores de temporada y capitulo en Isengard (EPG y detalle).
+	- Se sustituye la configuración de todos los canales y eliminar duplicados por una nueva opción con las siguientes caracteristicas.
+		- Canales Contratados. Busque de paquetes contratados. 
+		- Scan HD. Escaneo de canales y se dejan solo los HD, eliminando los duplicados SD.
+		- Scan SD. Escaneo de canales y se dejan solo los SD.
+		- Scan HD + SD. Escaneo de canales completo sin filtrado.
+		Será necesaria establecer las opciones para aquellos que teniais marcada la opción de todos los canales.
+	
+- Versión 1.0.53
+	- Cambios en el envío de imagen mediante DLNA.
+	- Se añaden las programación de serie dentro de los temporizadores.
+
+- Versión 1.0.52
+	- Corregido warnings en la carga de grupos de canales con canales duplicados.
+
+- Versión 1.0.51
+	- Corregido reinicios en la carga del EPG en sistemas Linux.
+
+	
+- Versión 1.0.49
+	- Corregido error el realizar temporizaciones manuales.
+	- Errores varios en la carga de canales.
+	- Se realizaron modificaciones en la carga de epgs para que sea más rapida.
+	- Mejoras importantes en la gestión de memoria.
+	- Corregido problema en la asignación de canales mediante DLNA.
+
+- Versión 1.0.48
+	- Cambios en las grabaciones locales y sincronización para evitar micro cortes.
+	- Corregido error en programación de series.
+	- Mejora en orden de canales en algunas configuraciones.
+	- Cambios en los timeouts de http para evitar falsos casos de perdida de conexión.
+	- Debería funcionar el DLNA con OSMC.
+	
+- Versión 1.0.47
+	- Se elimina la opción de grabación en nube, ya que se activa sola si detecta conexión correcta con el servidor.
+	- Se añade nueva opción para las grabaciones manuales en el apartado de grabaciones en nube.
+	  Ahora se puede programar para que eliga siempre en nube, en local o pregunte al realizar la grabación.
+	- Mejoras en la carga en arranque del detalle de epg. Ahora se carga de fondo posterior al arranque de Kodi.
+	- Se corrige el contador de tiempo al avanzar una grabación en la nube.
+	
+
+- Versión 1.0.46
+	- Mejoras en la transición del timeshift a live.
+	- Arreglado error al arrancar Kodi con una grabación en curso.
+	- Se añaden opciones de integración de la base de datos de series de Kodi y las grabaciones locales del plugin.
+
+- Versión 1.0.45
+	- Solucionado problema en la programación de series. En algunos casos dependiendo de las opciones de canales no se programaban las series.
+	- Se solucionan algunos de los problemas con el timeshift en windows. Se añaden opciones de configuración sobre este aspecto.
+	- Compatibilidad DLNA con televisiones Samsung series 6. Gracias a ipipip (Jose Luis).
+	- Se añade en el submenú grabaciones la opción de limpieza de grabaciones sin archivo.
+	- Se añade mensaje de error cuando existe un timeout en las conexiones UDP.
+
+- Versión 1.0.44
+	- Se corrige problema de selección de canales en todos los canales sin conexión directa con el servidor movistar.
+	- Se corrige error en la opción de eliminar duplicados.
+	- Corregido error de detalle de EPG cuando el programa tenía información de productor.
+
+- Versión 1.0.43
+	- Compatibilidad upnp con VLC u otros sistemas. Gracias a la colaboración de Jacaru.
+	- Mejoras internas para adaptación a la versión Isengard.
+	- Se añade el cacheo de configuracion.
+	- Se suprimen los canales duplicados en las opciones de todos los canales.
+	- Solucionado problema de timeouts en Mac OSX en la cargas de canales y páginas.
+
+- Versión 1.0.42
+	- Autodetección de tipo de canales a visualizar HD o SD.
+	- Más mejoras de compatibilidad DLNA.
+	- Solucionado problema de liberación de memoria en la opción transcode.
+	- Comprobacion de logos en series programadas.
+	
+- Versión 1.0.41
+	- Error al suprimir canales duplicados (AMC y AMCHD).
+	- Mejora de la transición play-pause.
+	- Solucionado los problemas de reinicio en raspberry 2 con buffers largos.
+	- Mejoras en la compatibilidad de upnp/DLNA (por ejemplo cliente upnp Kodi).
+	
+- Versión 1.0.40
+	- Corregido error de actualización al eliminar temporizadores.
+	
+- Versión 1.0.39
+	- Corregido error de reinicio de raspberry 2.
+	
+- Versión 1.0.38
+	- Corregido error de acceso al panel lateral de sincronización.
+	- Corregido error de Linux/raspberry que impide ver las grabaciones en nube.
+
+- Versión 1.0.37
+	- Se reorganiza la configuración para añadir una pestaña de DLNA.
+	- Se añaden 2 opciones de selección de puerto para upnp y DLNA.
+	- Se corrige el error de imagenes de fondos en la versión de android de solo ADD-ON.
+	- Se añaden las pantallas para la gestión de sincronización de grabaciones. 
+	  (Boton derecho -> acciones del cliente -> Sincornizaciones y grabaciones en nube).
+	
+- Versión 1.0.36
+	- Se cargan las grabaciones y temporizadores independientemente de la opción de grabaciones en nube.
+	- DLNA mejoras de estabilidad y rendimiento.
+	- DLNA se corrigen los reinicios en raspberrys.
+	- DLNA corregidos errores en transcode.
+	- Upnp se mejora la obtención de logotipos.
+	- Upnp mejora de rendimiento al servir canales.
+	- Corregido error que suprimia algunos canales en la lista upnp.
+	- Primera versión de sincronización de grabaciones en nube a local. En pruebas.
+	
+- Versión 1.0.35
+	- Corregido error de visualización de tipo de video hd/sd en reproducciones VOD.
+	- Se añade la posibilidad de seleccionar grabaciones en nube a las series.
+	- Nuevo menú lateral en series para la realización del filtro de series programadas.
+	- Se refrescan los logos para aquellos que tienen IP incompatibles.
