@@ -1,232 +1,231 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="hellyrepo.kodi" name="HellyRepo" version="0.2.4" provider-name="Ivo Helwegen">
-        <extension point="xbmc.addon.repository" name="HellyRepo">
-            <dir minversion="15.0.0">
-                <info compressed="false">https://raw.githubusercontent.com/Helly1206/_repo/isengard/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Helly1206/_repo/isengard/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Helly1206/_repo/isengard/</datadir>
-                <hashes>false</hashes>
-            </dir>
-            <dir minversion="15.9.0">
-                <info compressed="false">https://raw.githubusercontent.com/Helly1206/_repo/jarvis/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Helly1206/_repo/jarvis/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Helly1206/_repo/jarvis/</datadir>
-                <hashes>false</hashes>
-            </dir>
-            <dir minversion="16.9.0">
-                <info compressed="false">https://raw.githubusercontent.com/Helly1206/_repo/krypton/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Helly1206/_repo/krypton/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Helly1206/_repo/krypton/</datadir>
-                <hashes>false</hashes>
-            </dir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>The repository contains addons and scripts to be used with kodi.</summary>
-            <description>HellyRepo is a repository that contains addons and scripts to be used with kodi.</description>
-            <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="plugin.video.pelisalacarta"
-    name="pelisalacarta"
-    version="4.2.0~beta2"
-    provider-name="tvalacarta">
+<addon id="plugin.video.adryanlist"
+       name="AdryanList"
+       version="2.7.6"
+       provider-name="Adryan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Películas y series a la carta</summary>
-    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano e Inglés.</description>
-    <summary lang="en">Movies and TV Shows on demand</summary>
-    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum>http://www.mimediacenter.info/foro</forum>
-    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
-    <email>tvalacarta@gmail.com</email>
-    <source>https://github.com/tvalacarta/pelisalacarta</source>
-  </extension>
-  <extension point="xbmc.service" library="library_service.py" start="login|startup">
-  </extension>
-</addon>
-
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.75" provider-name="scakemyer">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.quasar" optional="true" />
-        <import addon="script.quasar.burst" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Quasar: Torrent streaming</summary>
-        <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>all</platform>
-        <website>https://github.com/scakemyer/plugin.video.quasar</website>
-        <source>https://github.com/scakemyer/plugin.video.quasar</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
-        <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshots/home.jpg</screenshot>
-            <screenshot>resources/screenshots/movies.jpg</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.videoclup"
-       name="[COLOR yellow]Solo[/COLOR][COLOR red]Cine[/COLOR]"
-       version="1.2"
-       provider-name="SoloCine">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>AdryanList  - Television - Peliculas - Series</summary>
+    <description>Adryanlist
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.cine" name="Cine" version="1.0.32" provider-name="Topo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Cine</summary>
+    <description>Addon de Cine</description>
+    <disclaimer></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ElRinconDeLolo"
+       name="[COLOR blue]ElRinconDeLolo[/COLOR]"
+	   version="1.0"
+	   provider-name="Manuel">
+
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="plugin.video.youtube" optional="true" />
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
+	<import addon="script.module.livestreamer" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR yellow]SOLOCINE  DISEÑADO,ORGANIZADO,POR[COLOR red] XKMC[COLOR yellow] FREE POR UN MUNDO MEJOR[/COLOR]</summary>
-    <description lang="en">FREE PELICULAS ONLINE- visita mi canal de youtube - XKMC -SUBCRIBETE - </description>
-    <disclaimer lang="en">SoloCine </disclaimer>
-	<platform>all</platform>
-  </extension>
-</addon>
-
-<addon
-  id="pvr.iptvImagenio.rpi"
-  version="1.0.75"
-  name="PVR Movistar+ TV para Raspberry Pi (Jarvis)"
-  provider-name="Victor Juidiaz">
-  <requires>
-  </requires>
-  <extension
-     point="xbmc.pvrclient"
-     library_linux="Kodi_IPTV_Imagenio.pvr"
-     library_wingl="Kodi_IPTV_Imagenio_win32.dll"
-     library_windx="Kodi_IPTV_Imagenio_win32.dll"
-     library_android="libKodi_IPTV_Imagenio.so"
-     library_osx="Kodi_IPTV_Imagenio.pvr"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Kodi PVR addon for Movistar+ TV</summary>
-    <summary lang="es">Kodi PVR para Movistar+ TV</summary>
-    <description lang="en">IPTV PVR Client support streaming of Live TV for multicast/unicast sources and EPG.</description>
-    <description lang="es">Cliente IPTV para Movistar+ TV television.</description>
-    <disclaimer lang="en">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
-    <disclaimer lang="es">Este software no es estable. No nos hacemos responsables de su correcto funcionamiento.</disclaimer>
+    <summary>Addon ElRinconDeLolo</summary>
+    <description lang="en">[COLOR blue][B]PARA TODOS VOSOTROS CON MUCHO ARTE[/B][/COLOR]</description>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="repository.catoal" name="Catoal repository" version="1.0.0" provider-name="Catoal">
-	<extension point="xbmc.addon.repository" name="Catoal Repository">
-		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
-		<checksum>http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/catoalkodi/repository.catoal/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Catoal Addon</summary>
-		<description>Addon Description</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
+<addon id="plugin.video.exabytetv"
+       name="[B][COLOR aqua]Exabyte TV[/COLOR][/B]"
+       version="2.0"
+       provider-name="Sahid CG">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Exabyte TV</summary>
+    <description>
+        Addon oficial de Exabyte TV
+        Encontrarás todo un mundo de entretenimiento.
+        exabytetv.info
+
+    </description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
-<addon id="repository.exodus" version="1.0.1" name="Exodus repository" provider-name="Exodus">
-	<extension point="xbmc.addon.repository" name="Exodus repository">
+<addon id="plugin.video.JHG MASTER"
+       name="JHG MASTER"
+       version="1.0.0"
+       provider-name="Catoal">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado para JHG por Catoal</summary>
+    <description>Para el disfrute en familia</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.JOKER"
+       name="[COLOR goldenrod]JOKER [/COLOR]"
+       version="2.0.0"
+       provider-name="[COLOR goldenrod]JOKER[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>[COLOR goldenrod][B]JOKER [/B][/COLOR]</summary>
+    <description>
+----= Bienvenidos a JOKER TV Addon =----
+Este complemento se convierte en una opcion mas
+a la hora de tener un centro multimedia completo,
+cubriendo las categorias mas solicitadas por los
+usuarios.
+
+JOKER no aloja ningun tipo de contenido. Todos estos
+enlaces estan colocado de manera libre en interNET.
+--------------------------------------------------------------------
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.6" provider-name="TierraMedia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="orthanc.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>TV</summary>
+    <description>Visualiza el contenido de la nube, series, películas.</description>
+    <disclaimer></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="repository.adryan" name="Adryan's Kodi Add-on Repository" version="1.0" provider-name="adryan">
+	<extension point="xbmc.addon.repository" name="Adryan's Kodi Add-on Repository">
 		<dir>
 			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
 			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
 		</dir>
-		<info compressed="false">https://offshoregit.com/exodus/addons.xml</info>
-		<checksum>https://offshoregit.com/exodus/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/exodus/</datadir>
+		<info compressed="false">https://offshoregit.com/adryan/addons.xml</info>
+		<checksum>https://offshoregit.com/adryan/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/adryan/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Exodus repository</summary>
-		<description lang="en">Exodus repository</description>
+		<summary>Adryan's Kodi Add-on Repository</summary>
+		<description>Adryan's Kodi Add-on Repository. Please visit www.tvaddons.ag for assistance with this add-on.</description>
 		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.Kinkin" name="Kinkins REPO" version="1.4" provider-name="Kinkin">
-	<extension point="xbmc.addon.repository" name="Kinkin Addon Repository">
-		<info compressed="false">https://offshoregit.com/kinkin-xbmc-repository/addons.xml</info>
-		<checksum>https://offshoregit.com/kinkin-xbmc-repository/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/kinkin-xbmc-repository/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install Kinkins Addons</summary>
-		<description>Install addons by Kinkin</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.myshows.me" name="MyShows.me Kodi Repo" version="1.0.5" provider-name="DiMartino">
-	<extension point="xbmc.addon.repository" name="MyShows.me Kodi Repo">
-		<info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
-		<checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
-		<datadir zip="true">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Устанавливайте дополнения из репозитория MyShows.me</summary>
-		<description>Дополнения для Kodi</description>
-		<disclaimer>DiMartino</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.plexus-streams" name="Plexus-Streams Repository" version="1.0.0" provider-name="D4FC">
-	<extension point="xbmc.addon.repository" name="Plexus-Streams Repository">
-		<info compressed="false">https://bitbucket.org/plexus-streams/plexus-streams/raw/releases/addons.xml</info>
-		<checksum>https://bitbucket.org/plexus-streams/plexus-streams/raw/releases/addons.xml.md5</checksum>
-		<datadir zip="true">https://bitbucket.org/plexus-streams/plexus-streams/raw/releases/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Plexus-Streams Repository</summary>
-		<description>Plexus-Streams Repository</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.team_inspiration" name="[COLOR red]T[/COLOR]eam [COLOR red]I[/COLOR]nspiration" version="4.0" provider-name="Inspiration">
-	<extension point="xbmc.addon.repository" name="VietKodi Addon Repository">
-		<info compressed="false">http://teaminspiration.net23.net/Plugins/addons.xml</info>
-		<checksum>http://teaminspiration.net23.net/Plugins/addons.xml.md5</checksum>
-		<datadir zip="true">http://teaminspiration.net23.net/Plugins/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Team Inspiration Repo</summary>
-		<description>Repositorio do Team Inspiration</description>
-		<platform>all</platform>
+	    <forum>https://www.tvaddons.ag/forums/</forum>
+	    <website>http://www.tvaddons.ag/</website>
 	</extension>
 </addon>
 
@@ -240,19 +239,6 @@
 		<summary>The King Zero Official Repo</summary>
    		<description lang="en">Addons</description>
 		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.wolfpack" name="[B][COLOR ghostwhite]W[/COLOR][COLOR red]OLFPAC[/COLOR][COLOR ghostwhite]K[/COLOR][/B]" version="1.0" provider-name="Wolfpack">
-	<extension point="xbmc.addon.repository" name="[B][COLOR ghostwhite]W[/COLOR][COLOR red]OLFPAC[/COLOR][COLOR ghostwhite]K[/COLOR][/B]">
-		<info compressed="false">http://beaub.srve.io/wolfpackrepo/files/addons.xml</info>
-		<checksum>http://beaub.srve.io/wolfpackrepo/files/addons.xml.md5</checksum>
-		<datadir zip="true">http://beaub.srve.io/wolfpackrepo/files/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary></summary>
-		<description>This is the wolfpack repo, where you can get access to the wolfpack addon</description>
 		<platform>all</platform>
 	</extension>
 </addon>

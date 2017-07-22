@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.adryan" name="Adryan's Kodi Add-on Repository" version="1.0" provider-name="adryan">
+	<extension point="xbmc.addon.repository" name="Adryan's Kodi Add-on Repository">
+		<dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/adryan/addons.xml</info>
+		<checksum>https://offshoregit.com/adryan/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/adryan/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Adryan's Kodi Add-on Repository</summary>
+		<description>Adryan's Kodi Add-on Repository. Please visit www.tvaddons.ag for assistance with this add-on.</description>
+		<platform>all</platform>
+	    <forum>https://www.tvaddons.ag/forums/</forum>
+	    <website>http://www.tvaddons.ag/</website>
+	</extension>
+</addon>
