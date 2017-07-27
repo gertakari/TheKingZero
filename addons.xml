@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.program.advancedsettings"
+       name="Easy Advanced Settings"
+       version="0.8.9"
+       provider-name="kinkin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Create, view, edit and delete your advancedsettings.xml file in a user-friendly gui</summary>
+        <description>All settings follow the xbmc.org wiki[CR][CR]With this tool you can create your advanced settings directly from XBMC[CR][CR]If you don't know what a setting does, don't enable it!</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE</license>
+        <forum></forum>
+        <website></website>
+        <source></source>
+        <email></email>
+    </extension>
+
+</addon>
+
 <addon id="plugin.video.adryanlist"
        name="AdryanList"
        version="2.7.6"
@@ -53,6 +79,24 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.deportesalacarta"
+    name="Deportesalacarta"
+    version="1.23"
+    provider-name="deportesalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.libtorrent" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.exabytetv"
        name="[B][COLOR aqua]Exabyte TV[/COLOR][/B]"
        version="2.0"
@@ -87,6 +131,23 @@
     </description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="plugin.video.JHG MASTER"
@@ -212,6 +273,194 @@ enlaces estan colocado de manera libre en interNET.
   </extension>
 </addon>
 
+<addon id="plugin.video.Planeta"
+       name="Planeta"
+       version="0.0.2"
+       provider-name="CaNeEs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description>
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="scakemyer">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="repository.quasar" optional="true" />
+        <import addon="script.quasar.burst" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Quasar: Torrent streaming</summary>
+        <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>https://github.com/scakemyer/plugin.video.quasar</website>
+        <source>https://github.com/scakemyer/plugin.video.quasar</source>
+        <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
+        <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/home.jpg</screenshot>
+            <screenshot>resources/screenshots/movies.jpg</screenshot>
+            <screenshot>resources/screenshots/webui.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.supermospytv"
+       name="supermospytv"
+       version="0.0.1"
+       provider-name="supermospytv">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>supermospytv  - Television - Peliculas - Series</summary>
+    <description>No se dejen engañar este addon es gratuito
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.torrenter" name="Torrenter" version="2.6.1da" provider-name="DiMartino">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.libtorrent"/>
+        <import addon="script.module.torrent.ts"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.torrent2http"/>
+        <import addon="script.module.pyrrent2http"/>
+        <import addon="script.module.chardet" />
+        <import addon="script.module.pyxbmct"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Plugin helps you to watch videos from p2p torrent-networks, without full predownload.
+        </summary>
+        <description lang='en'>It also can add, control torrents and play downloaded files with external torrent-client (uTorrent, Transmisson, Vuse, Deluge, qBittorrent) or python-libtorrent.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Плагин позволяет просматривать видео из пиринговых торрент-сетей, не дожидаясь полного скачивания.
+        </summary>
+        <description lang='ru'>Так же плагин может добавлять, проигрывать и управлять скачками в торрент клиентах (uTorrent, Transmisson, Deluge и Vuse, qBittorrent) или средставми python-libtorrent.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+		<forum>https://forums.tvaddons.ag/addon-releases/29224-torrenter-v2.html</forum>
+		<website>http://xbmc.ru/forum/showthread.php?t=6837</website>
+		<email>skype:kyonkodura</email>
+		<source>https://github.com/DiMartinoXBMC/plugin.video.torrenter</source>
+    </extension>
+</addon>
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.0.4"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV from your media center</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="plugin.video.ZemTV-shani"
+       name="Zem"
+       version="6.5.9"
+       provider-name="shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+       	<import addon="script.module.elementtree" version="1.2.8"/>
+
+
+    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Zem Addon for sports and desi contents. Visit TVADDONS.ag for support</summary>
+    <description>Watch Sports and Desi contents on your XBMC. This plugin fetches the video sources from various platforms and locations</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with any of the content provider.</disclaimer>
+    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
+    <email>@shani_08_kodi</email>
+    <platform>all</platform>
+
+
+  </extension>
+</addon>
+
 <addon id="repository.adryan" name="Adryan's Kodi Add-on Repository" version="1.0" provider-name="adryan">
 	<extension point="xbmc.addon.repository" name="Adryan's Kodi Add-on Repository">
 		<dir>
@@ -245,6 +494,23 @@ enlaces estan colocado de manera libre en interNET.
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.crt" name="[B][COLOR white]R[/COLOR][COLOR red]andom 24/[/COLOR][COLOR white]7[/COLOR][/B]" version="1.0" provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"  version="3.0.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>repository</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">Random 24/7</summary>
+	<description lang="en"></description>
+	<disclaimer lang="en"></disclaimer>
+	<platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="repository.ddurdle" name="ddurdle's XBMC Addons" version="1.0.2" provider-name="ddurdle">
@@ -295,6 +561,20 @@ enlaces estan colocado de manera libre en interNET.
   </extension>
 </addon>
 
+<addon id="repository.Maniac" name="Maniac repository" version="1.0.0" provider-name="Maniac">
+	<extension point="xbmc.addon.repository" name="Maniac Repository">
+		<info compressed="false">http://raw.github.com/Maniac2017/repository.Maniac/master/addons.xml</info>
+		<checksum>http://raw.github.com/Maniac2017/repository.Maniac/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/Maniac2017/repository.Maniac/master/repor/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Maniac Addon</summary>
+		<description>Repositorio NO oficial para Kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.mitvspain" name="MiTv Repository" version="1.0.0" provider-name="Marce - MiTv">
 	<extension point="xbmc.addon.repository" name="MiTv Repository">
 		<info compressed="false">http://raw.github.com/MiTvSpain/repository.mitvspain/master/addons.xml</info>
@@ -310,6 +590,40 @@ enlaces estan colocado de manera libre en interNET.
 	</extension>
 </addon>
 
+<addon id="repository.myshows.me" name="MyShows.me Kodi Repo" version="1.0.5" provider-name="DiMartino">
+	<extension point="xbmc.addon.repository" name="MyShows.me Kodi Repo">
+		<info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
+		<checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
+		<datadir zip="true">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Устанавливайте дополнения из репозитория MyShows.me</summary>
+		<description>Дополнения для Kodi</description>
+		<disclaimer>DiMartino</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.9" provider-name="Shani">
+	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
+        <dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+
+    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for Zemtv etc</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.TheKingZero" name="The King Zero Official Repo" version="0.0.1" provider-name="King Zero">
 	<extension point="xbmc.addon.repository" name="The King Zero Official Repo">
 		<info compressed="false">https://raw.github.com/gertakari/TheKingZero/master/addons.xml</info>
@@ -320,6 +634,19 @@ enlaces estan colocado de manera libre en interNET.
 		<summary>The King Zero Official Repo</summary>
    		<description lang="en">Addons</description>
 		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.ytplugin" name="Youtube Addon Repo" version="1.0" provider-name="Jeffrey Frasure">
+	<extension point="xbmc.addon.repository" name="Youtube Addon Repository">
+		<info compressed="false">https://github.com/jdf76/repository/raw/master/addons.xml</info>
+		<checksum>https://github.com/jdf76/repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/jdf76/repository/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Kodis Youtube Addons</summary>
+                <description>Download and install addons from the Kodi Youtube group. This plugin is not official from Google.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
