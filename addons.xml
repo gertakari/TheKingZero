@@ -58,6 +58,35 @@
   </extension>
 </addon>
 
+<addon
+	id="plugin.video.arenavisionezy"
+	name="ArenaVision EZY"
+	version="5.3.8"
+	provider-name="Wazzu">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="program.plexus" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ArenaVision EZY</summary>
+		<description>Interfaz para ArenaVision</description>
+		<platform>all</platform>
+		<license/>
+		<forum/>
+		<website/>
+		<email>egrueda@gmail.com</email>
+		<source/>
+	</extension>
+	<extension point="xbmc.addon.repository" name="ArenaVision EZY">
+		<info compressed="false">https://avezy.tk/repo/addons.xml</info>
+		<checksum>https://avezy.tk/repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://avezy.tk/repo/zip/</datadir>
+	</extension>
+</addon>
+
 <addon id="plugin.video.cine" name="Cine" version="1.0.32" provider-name="Topo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -75,24 +104,6 @@
     <forum></forum>
     <website></website>
     <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.deportesalacarta"
-    name="Deportesalacarta"
-    version="1.23"
-    provider-name="deportesalacarta">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
     <source></source>
   </extension>
 </addon>
@@ -252,7 +263,7 @@ enlaces estan colocado de manera libre en interNET.
   </extension>
 </addon>
 
-<addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.6" provider-name="TierraMedia">
+<addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.11" provider-name="TierraMedia">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -273,34 +284,26 @@ enlaces estan colocado de manera libre en interNET.
   </extension>
 </addon>
 
-<addon id="plugin.video.Planeta"
-       name="Planeta"
-       version="0.0.2"
-       provider-name="CaNeEs">
+<addon id="plugin.video.plexus-streams"
+       name="Plexus-Streams"
+       version="1.0.15m"
+       provider-name="D4FC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.pytz" />
     <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
+    <import addon="script.module.mechanize" version="0.2.6"/>
+    <import addon="program.plexus" />
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
   </extension>
-
-
   <extension point="xbmc.addon.metadata">
-    <summary></summary>
-    <description>
-    </description>
+    <summary>Plexus wrapper</summary>
+    <description lang="en">P2P-Streams fork that works as a Plexus wrapper</description>
+    <disclaimer lang="en">The authors does not host nor distribute any of the content you may watch using this addon. The authors have no affiliation with any of the content providers. This addon does not track its users.</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
@@ -335,38 +338,6 @@ enlaces estan colocado de manera libre en interNET.
             <screenshot>resources/screenshots/webui.png</screenshot>
         </assets>
     </extension>
-</addon>
-
-<addon id="plugin.video.supermospytv"
-       name="supermospytv"
-       version="0.0.1"
-       provider-name="supermospytv">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>supermospytv  - Television - Peliculas - Series</summary>
-    <description>No se dejen engañar este addon es gratuito
-    </description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.torrenter" name="Torrenter" version="2.6.1da" provider-name="DiMartino">
@@ -481,21 +452,6 @@ enlaces estan colocado de manera libre en interNET.
 	</extension>
 </addon>
 
-<addon id="repository.BassFox-Official" name="BassFox Official Repo" version="1.3.7" provider-name="BassFox">
-	<extension point="xbmc.addon.repository" name="BassFox official Repo">
-		<info compressed="false">https://raw.githubusercontent.com/Jfx666/BiltegiberriaBFX3/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Jfx666/BiltegiberriaBFX3/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Jfx666/BiltegiberriaBFX3/master</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>BassFox Official Repository</summary>
-                <description lang="en">Install Addon Official Bass Fox and other add-ons that are complementary help in support links</description>
-   		<description lang="es">Instala el Addon Oficial BassFox y los otros add-ons que son complementos de ayuda en la reproducción de las listas</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="repository.crt" name="[B][COLOR white]R[/COLOR][COLOR red]andom 24/[/COLOR][COLOR white]7[/COLOR][/B]" version="1.0" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -526,39 +482,18 @@ enlaces estan colocado de manera libre en interNET.
 	</extension>
 </addon>
 
-<addon id="repository.exodus" version="1.0.1" name="Exodus repository" provider-name="Exodus">
-	<extension point="xbmc.addon.repository" name="Exodus repository">
-		<dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
-		<info compressed="false">https://offshoregit.com/exodus/addons.xml</info>
-		<checksum>https://offshoregit.com/exodus/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/exodus/</datadir>
+<addon id="repository.kodispain" name="kodispain repository" version="1.0" provider-name="joheos11">
+	<extension point="xbmc.addon.repository" name="KodiSpain repository">
+		<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Exodus repository</summary>
-		<description lang="en">Exodus repository</description>
+		<summary>-KodiSpain Repo</summary>
+		<description>Repositorio creado para grupo telegram http://t.me/kodispain</description>
+		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="repository.lsellens"
-       name="lsellens openelec addon repository"
-       version="1.0.6"
-       provider-name="lsellens">
-  <extension point="xbmc.addon.repository"
-             name="lsellens openelec addon repository">
-    <info compressed="false">http://lsellens.openelec.tv/addons/repo/addons.xml</info>
-    <checksum>http://lsellens.openelec.tv/addons/repo/addons.xml.md5</checksum>
-    <datadir zip="true">http://lsellens.openelec.tv/addons/repo</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Repository for xbmc/openelec addons by lsellens</summary>
-    <description lang="en">Repository for an unofficial fork of SABnzbd-Suite and SickPotatoHead</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="repository.Maniac" name="Maniac repository" version="1.0.0" provider-name="Maniac">
@@ -604,6 +539,20 @@ enlaces estan colocado de manera libre en interNET.
 	</extension>
 </addon>
 
+<addon id="repository.ronniehd" name="RonnieHD repository" version="1.0.1" provider-name="RonnieHD">
+	<extension point="xbmc.addon.repository" name="RonnieHD Repository">
+		<info compressed="false">https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/ronniehd/repository.ronniehd/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Third party Kodi addons updates/mods</summary>
+		<description>RonnieHD Repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.shani" name="Shanis Addon Repository" version="2.9" provider-name="Shani">
 	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
         <dir>
@@ -638,68 +587,34 @@ enlaces estan colocado de manera libre en interNET.
 	</extension>
 </addon>
 
-<addon id="repository.ytplugin" name="Youtube Addon Repo" version="1.0" provider-name="Jeffrey Frasure">
-	<extension point="xbmc.addon.repository" name="Youtube Addon Repository">
-		<info compressed="false">https://github.com/jdf76/repository/raw/master/addons.xml</info>
-		<checksum>https://github.com/jdf76/repository/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/jdf76/repository/raw/master/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install Kodis Youtube Addons</summary>
-                <description>Download and install addons from the Kodi Youtube group. This plugin is not official from Google.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
+<addon id="script.video.F4mProxy"
+	     name="F4mProxy"
+	     version="2.8.6"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+  </extension>
 
-<addon id="repository.zomboided.plugins" name="Zomboided Add-on Repository" version="1.0.0" provider-name="zomboided">
-    <extension point="xbmc.addon.repository" name="Zomboided Add-on Repository">
-        <info>https://raw.githubusercontent.com/zomboided/xbmc.zomboided.plugins/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/zomboided/xbmc.zomboided.plugins/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/zomboided/xbmc.zomboided.plugins/raw/master/plugins/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Install add-ons from Zomboided repository</summary>
-        <description lang="en">Add-ons for Kodi</description>
-    </extension>
-</addon>
 
-<addon id="script.plex"
-       name="Plex"
-       version="0.0.102"
-       provider-name="Plex">
-    <requires>
-        <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.requests" version="2.3.0"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.python.pluginsource" library="plugin.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"></extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Plex for Kodi</summary>
-        <summary lang="de">Plex für Kodi</summary>
-        <description lang="en">Official Plex for Kodi add-on</description>
-        <description lang="de">Offizielles Plex für Kodi Addon</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <forum>https://forums.plex.tv/categories/plex-for-kodi</forum>
-        <website>https://www.plex.tv</website>
-        <source>https://github.com/plexinc/plex-for-kodi</source>
-        <platform>all</platform>
-        <disclaimer lang="en">This beta release requires a Plex Pass</disclaimer>
-        <disclaimer lang="de">Diese Beta Version benötigt einen Plex Pass</disclaimer>
-    </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
 </addon>
 
 <addon id="service.thoradia"
-       name="Thoradia"
+       name="Thoradia Add-ons"
        version="0.0.0"
        provider-name="thoradia">
   <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="os.libreelec.tv" version="8.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -712,9 +627,9 @@ enlaces estan colocado de manera libre en interNET.
     <checksum>TBD</checksum>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Thoradia: add-on repository</summary>
+    <summary>Thoradia Add-ons: add-on repository</summary>
     <description>
-Thoradia (0) add-on repository.
+Thoradia Add-ons (0) add-on repository.
     </description>
     <disclaimer>
 Keep it legal and carry on
