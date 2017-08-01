@@ -648,7 +648,7 @@ enlaces estan colocado de manera libre en interNET.
 	</extension>
 </addon>
 
-<addon id="repository.myshows.me" name="MyShows.me Kodi Repo" version="1.0.5" provider-name="DiMartino">
+<addon id="repository.myshows.me" name="MyShows.me Kodi Repo" version="1.0.6" provider-name="DiMartino">
 	<extension point="xbmc.addon.repository" name="MyShows.me Kodi Repo">
 		<info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
 		<checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
