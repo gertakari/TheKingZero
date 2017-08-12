@@ -308,12 +308,40 @@ enlaces estan colocado de manera libre en interNET.
   </extension>
 </addon>
 
-<addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.11" provider-name="TierraMedia">
+<addon id="plugin.video.mitvspain"
+    name="Mitvspain"
+    version="1.1.8"
+    provider-name="MiTvSpain - Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.libtorrent" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Películas y series a la carta</summary>
+    <description lang="es">Películas, series, documentales, anime, ... Todo está en Internet, y ahora en tu media center.</description>
+    <news>Reparados: allcalidad, cinetux, plusdede, mejortorrent, playmax</news>
+
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+  </extension>
+  <extension point="xbmc.service" library="library_service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.13" provider-name="TierraMedia">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="orthanc.py">
     <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="Palantir Repo">
+        <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>TV</summary>
@@ -363,7 +391,7 @@ enlaces estan colocado de manera libre en interNET.
 
 <addon id="plugin.video.plexus-streams"
        name="Plexus-Streams"
-       version="1.0.15m"
+       version="1.0.15o"
        provider-name="D4FC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
