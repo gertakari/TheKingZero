@@ -493,6 +493,33 @@ enlaces estan colocado de manera libre en interNET.
     </extension>
 </addon>
 
+<addon
+  id="plugin.video.SportsDevil"
+  version="3 (build 20170519)"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.supermospytv"
        name="supermospytv"
        version="0.0.1"
@@ -617,24 +644,20 @@ enlaces estan colocado de manera libre en interNET.
   </extension>
 </addon>
 
-<addon id="repository.adryan" name="Adryan's Kodi Add-on Repository" version="1.0" provider-name="adryan">
-	<extension point="xbmc.addon.repository" name="Adryan's Kodi Add-on Repository">
-		<dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
-		<info compressed="false">https://offshoregit.com/adryan/addons.xml</info>
-		<checksum>https://offshoregit.com/adryan/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/adryan/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Adryan's Kodi Add-on Repository</summary>
-		<description>Adryan's Kodi Add-on Repository. Please visit www.tvaddons.ag for assistance with this add-on.</description>
-		<platform>all</platform>
-	    <forum>https://www.tvaddons.ag/forums/</forum>
-	    <website>http://www.tvaddons.ag/</website>
-	</extension>
+    <addon id="repository.adryan" name="ADRYAN Repositorio" version="2.0.0" provider-name="adryan">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Adryan Repositorio Oficial">
+            <info compressed="false">http://adryanlist.org/addon/addons.xml</info>
+            <checksum>http://adryanlist.org/addon/addons.xml.md5</checksum>
+            <datadir zip="true">http://adryanlist.org/addon/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repositorio para AdryanList </summary>
+            <description>Repositorio que pertenece a AdryanList.</description>
+            <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.1" provider-name="Alfa-Addon">
