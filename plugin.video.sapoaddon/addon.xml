@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sapoaddon"
+       name="SAPOIPTV"
+       version="0.0.2"
+       provider-name="entreunosyceros">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+	<import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>SAPOIPTV - entreunosyceros</summary>
+    <description>Addon creado solo con la intención de aprender. Se pone a disposición de quién lo necesite tan solo con fines didácticos. Para su perfecto funcionamiento es necesario tener instalado f4mtester, SportDevil (en su última versión) y urlResolver para su correcto funcionamiento. Los enlaces han sido obtenidos de forma legal por internet mediante el navegador firefox. No soy responsable ni de los contenidos ni de la estabilidad de los mismos. Los canales son tomados de páginas web que emiten en abierto la señal para todo el mundo. Este addon no busca generar beneficios ni pérdidas a nadie.
+ </description>
+  <disclaimer>La mayoría de los canales son obtenidos directamente de páginas web. Si las páginas dejan de emitir o cambian su configuración, el plugin dejará de recibir señal. Los canales caídos se repondrán a medida que se pueda. Cuando un canal no cargue a la primera, se recomienda intentar acceder a el varias veces. En ocasiones las páginas tardan en enviar la señal correspondiente.
+ </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.colussusxmen" name="[COLOR cornflowerblue]Colussusxmen Repository[/COLOR]" version="1.0" provider-name="J.RUIZ">
+	<extension point="xbmc.addon.repository" name="Colussusxmen Repository">
+		<info compressed="false">http://mybuild.darkwebrepo.gq/file/addons.xml</info>
+		<checksum>http://mybuild.darkwebrepo.gq/file/addons.xml.md5</checksum>
+		<datadir zip="true">http://mybuild.darkwebrepo.gq/file/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <summary>[COLOR white]Colussusxmen Repository[/COLOR]</summary>
+        <description>[COLOR white]Este repositorio fue creado para facilitar la actualizacion automatica de los addons y como siempre graias por el apoyo![/COLOR]</description>
+        <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>       
+    </assets>	
+  </extension>
+</addon>
